@@ -1,0 +1,19 @@
+; grp10
+
+$TTL    300
+@       IN      SOA     grp10.yaounde.te-labs.training. dnsadmin.yaounde.te-labs.training. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                          86400 )       ; Negative Cache TTL
+;
+
+; grp10
+@             NS           ns1.grp10.yaounde.te-labs.training.
+@             NS           ns2.grp10.yaounde.te-labs.training.
+
+ns1         A           100.100.10.130
+ns1         AAAA        fd89:59e0:10:128::130
+ns2         A           100.100.10.131
+ns2         AAAA        fd89:59e0:10:128::131
